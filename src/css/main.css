@@ -76,9 +76,7 @@ body {
     }
 
 .button {
-    background-color: #518681;
     border-radius: 2rem;
-    color: #fff;
     display: block;
     font-size: 1.2rem;
     padding: .8rem;
@@ -88,6 +86,30 @@ body {
     &:not(:last-of-type) {
         margin-bottom: 1.5rem;
     }
+}
+
+.cta-button {
+    background-color: #fbae42;
+    box-shadow: 2px 3px 0 0 #ce7800;
+    color: #2a4f43;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #ffad3a;
+    }
+
+    &:focus {
+        background-color: #e89521;
+    }
+
+    &:active {
+        background-color: #ffa62b;
+    }
+}
+
+.secondary-button {
+    background-color: #518681;
+    color: #fff;
 
     &:hover {
         background-color: #44736f;
@@ -95,5 +117,29 @@ body {
 
     &:focus {
         background-color: #365d59;
+    }
+
+    &:active {
+        background-color: #518681;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.icon-button {
+    color: #518681;
+    font-size: 1.7rem;
+    text-decoration: none;
+
+    &:hover {
+        color: #44736f;
+    }
+
+    &:focus {
+        color: #365d59;
     }
 }
