@@ -5,11 +5,17 @@
     --title-font: "Caprasimo", serif;
 }
 
+@font-face {
+    font-family: titleFont;
+    font-weight: 400;
+    src: url(/src/fonts/Fields-Regular.woff2);
+}
+
 body {
-    background-color: rgb(203,192,211);
-    background-image: linear-gradient(180deg, #f8dcce 0%, #f8dcce 30%, #518681 30%, #518681 100%);
+    background-color: #f7eee1;
+    background-image: linear-gradient(180deg, #f7eee1 0%, #f7eee1 30%, #834955 30%, #834955 100%);
     background-repeat: repeat-y;
-    color: #518681;
+    color: #504d48;
     font-family: var(--body-font);
     font-size: 16px;
     padding-bottom: 2rem;
@@ -42,7 +48,8 @@ body {
 }
 
 .name {
-    font-family: var(--title-font);
+    color: #F56348;
+    font-family: titleFont;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -89,27 +96,29 @@ body {
 }
 
 .cta-button {
-    background-color: #fbae42;
-    box-shadow: 2px 3px 0 0 #ce7800;
-    color: #2a4f43;
+    background-color: #F56348;
+    box-shadow: 2px 3px 0 0 #ce503a;
+    color: #fff;
+    font-family: titleFont;
     font-weight: 600;
 
     &:hover {
-        background-color: #ffad3a;
+        background-color: #ed5a40;
     }
 
     &:focus {
-        background-color: #e89521;
+        background-color: #ce503a;
     }
 
     &:active {
-        background-color: #ffa62b;
+        background-color: #ce503a;
     }
 }
 
 .secondary-button {
-    background-color: #518681;
+    background-color: #834955;
     color: #fff;
+    font-family: titleFont;
 
     &:hover {
         background-color: #44736f;
@@ -120,18 +129,19 @@ body {
     }
 
     &:active {
-        background-color: #518681;
+        background-color: #834955;
     }
 }
 
 .socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
 .icon-button {
-    color: #518681;
+    color: #834955;
     font-size: 1.7rem;
     text-decoration: none;
 
