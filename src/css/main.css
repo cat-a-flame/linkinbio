@@ -121,15 +121,15 @@ body {
     font-family: titleFont;
 
     &:hover {
-        background-color: #44736f;
+        background-color: #753c47;
     }
 
     &:focus {
-        background-color: #365d59;
+        background-color: #632f39;
     }
 
     &:active {
-        background-color: #834955;
+        background-color: #632f39;
     }
 }
 
@@ -146,10 +146,10 @@ body {
     text-decoration: none;
 
     &:hover {
-        color: #44736f;
+        color: #753c47;
     }
 
     &:focus {
-        color: #365d59;
+        color: #632f39;
     }
 }
