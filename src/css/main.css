@@ -12,8 +12,8 @@
 }
 
 body {
-    background-color: #f7eee1;
-    background-image: linear-gradient(180deg, #f7eee1 0%, #f7eee1 30%, #834955 30%, #834955 100%);
+    background-color: #a27c9c;
+    background-image: linear-gradient(180deg, #f2e9e9 0%, #f2e9e9 30%, #a27c9c 30%, #a27c9c 100%);
     background-repeat: repeat-y;
     color: #504d48;
     font-family: var(--body-font);
@@ -48,7 +48,7 @@ body {
 }
 
 .name {
-    color: #F56348;
+    color: #cb7d85;
     font-family: titleFont;
     font-size: 2.5rem;
     text-align: center;
@@ -96,22 +96,22 @@ body {
 }
 
 .cta-button {
-    background-color: #F56348;
-    box-shadow: 2px 3px 0 0 #ce503a;
+    background-color: #cb7d85;
+    box-shadow: 2px 3px 0 0 #ac676e;
     color: #fff;
     font-family: titleFont;
     font-weight: 600;
 
     &:hover {
-        background-color: #ed5a40;
+        background-color: #b66971;
     }
 
     &:focus {
-        background-color: #ce503a;
+        background-color: #a95e66;
     }
 
     &:active {
-        background-color: #ce503a;
+        background-color: #a95e66;
     }
 }
 
