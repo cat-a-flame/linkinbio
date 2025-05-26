@@ -1,24 +1,11 @@
 @import "/src/css/reset.css";
 
-:root {
-    --body-font: "Raleway", sans-serif;
-    --title-font: "Caprasimo", serif;
-}
-
-@font-face {
-    font-family: titleFont;
-    font-weight: 400;
-    src: url(/src/fonts/Fields-Regular.woff2);
-}
-
 body {
-    background-color: #a27c9c;
-    background-image: linear-gradient(180deg, #f2e9e9 0%, #f2e9e9 30%, #a27c9c 30%, #a27c9c 100%);
-    background-repeat: repeat-y;
-    color: #504d48;
-    font-family: var(--body-font);
+    background-color: #473963;
+    color: #fc935b;
+    font-family: "Arbutus Slab", serif;
     font-size: 16px;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
     @media screen and (min-width: 48rem) {
         body {
@@ -32,14 +19,10 @@ body {
 
 .avatar {
     border-radius: 100%;
-    height: 200px;
-    left: 0;
-    margin: auto;
+    height: 130px;
+    margin: 0 auto;
     overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: -100px;
-    width: 200px;
+    width: 130px;
 
     & img {
         display: block;
@@ -48,59 +31,50 @@ body {
 }
 
 .name {
-    color: #cb7d85;
-    font-family: titleFont;
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
     text-align: center;
 }
 
 .title {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: .8rem;
     text-align: center;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 1rem;
-    margin-top: 10rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    padding-top: 8rem;
-    padding-right: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-left: 2.5rem;
-    position: relative;
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
-    @media screen and (min-width: 48rem) {
-        .card {
-            margin-right: auto;
-            margin-left: auto;
-            width: 25rem;
-        }
-    }
+
+main {
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
 
 .button {
+    background-color: #ffbd9b;
     border-radius: 2rem;
+    box-shadow: 2px 3px 0 0 #c18361;
+    color: #2d1f48;
     display: block;
     font-size: 1.2rem;
-    padding: .8rem;
+    padding: 1rem .8rem;
     text-align: center;
     text-decoration: none;
 
     &:not(:last-of-type) {
         margin-bottom: 1.5rem;
     }
-}
-
-.cta-button {
-    background-color: #cb7d85;
-    box-shadow: 2px 3px 0 0 #ac676e;
-    color: #fff;
-    font-family: titleFont;
-    font-weight: 600;
 
     &:hover {
         background-color: #b66971;
@@ -115,41 +89,24 @@ body {
     }
 }
 
-.secondary-button {
-    background-color: #834955;
-    color: #fff;
-    font-family: titleFont;
-
-    &:hover {
-        background-color: #753c47;
-    }
-
-    &:focus {
-        background-color: #632f39;
-    }
-
-    &:active {
-        background-color: #632f39;
-    }
-}
-
 .socials {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .icon-button {
-    color: #834955;
+    color: #fc935b;
     font-size: 1.7rem;
     text-decoration: none;
 
     &:hover {
-        color: #753c47;
+        color: #ffa473;
     }
 
     &:focus {
-        color: #632f39;
+        color: #ed8147;
     }
 }
